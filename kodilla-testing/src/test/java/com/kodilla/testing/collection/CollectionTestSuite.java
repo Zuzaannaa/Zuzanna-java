@@ -37,11 +37,20 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorNormalList(){
         //Given
         OddNumbersExterminator ext = new OddNumbersExterminator();
-        //When
+        ArrayList<Integer> exterminated = new ArrayList<>();
+        ArrayList<Integer> all = new ArrayList<>();
+        for(int n = 0; n < 10; n++){
+            all.add(n);
+        }
         ArrayList<Integer> odd = new ArrayList<>();
-        for(int n = 0; n < 100; n++){
+        for(int n = 0; n < 10; n += 2) {
             odd.add(n);
         }
+        //When
+        exterminated = ext.exterminate(all);
+        //Then
+        Assert.assertTrue(odd.equals(exterminated));
+
     }
 
 }
