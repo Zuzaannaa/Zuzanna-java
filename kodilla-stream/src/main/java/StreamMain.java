@@ -23,7 +23,7 @@ public class StreamMain {
         Map<Integer, ForumUser> theResult = forum.getUserList().stream()
                 .filter(forumUser -> forumUser.getGender() == 'M')
                 .filter(forumUser -> forumUser.getPostsCount() > 0)
-                .filter(forumUser -> forumUser.calculateAge() > 20)
+                .filter(forumUser -> forumUser.calculateAge() >= 20)
                 .collect(Collectors.toMap(ForumUser::getId, forumUser -> forumUser));
 
         System.out.println("Size: " + theResult.size());
