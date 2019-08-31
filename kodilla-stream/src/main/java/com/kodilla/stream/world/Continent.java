@@ -5,12 +5,10 @@ import java.util.List;
 
 public final class Continent {
     private final String continentName;
-    private final Country country;
     private final List<Country> countries = new ArrayList<>();
 
-    public Continent(String continentName, Country country){
+    public Continent(String continentName){
         this.continentName = continentName;
-        this.country = country;
     }
 
     public void addCountry(Country country){
@@ -21,7 +19,4 @@ public final class Continent {
         return continentName;
     }
 
-    public Country getCountry() {
-        return country;
-    }
 }

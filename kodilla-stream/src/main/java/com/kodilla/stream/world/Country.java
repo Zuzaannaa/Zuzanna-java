@@ -8,16 +8,12 @@ import java.util.Objects;
 public final class Country {
     private final String countryName;
     private final BigDecimal peopleQuantity;
-    private final List<Country> countries = new ArrayList<>();
 
     public Country(BigDecimal peopleQuantity, String countryName){
         this.peopleQuantity = peopleQuantity;
         this.countryName = countryName;
     }
 
-    public void addCountry(Country country){
-        countries.add(country);
-    }
 
     public BigDecimal getPeopleQuantity(){
         return peopleQuantity;
@@ -45,7 +41,6 @@ public final class Country {
         return "Country{" +
                 "countryName='" + countryName + '\'' +
                 ", peopleQuantity=" + peopleQuantity +
-                ", countries=" + countries +
                 '}';
     }
 }
