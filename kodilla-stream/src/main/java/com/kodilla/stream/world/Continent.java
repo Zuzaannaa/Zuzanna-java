@@ -15,8 +15,8 @@ public final class Continent {
         countries.add(country);
     }
 
-    public String getContinentName() {
-        return continentName;
+    public List<Country> getCountries() {
+        return countries;
     }
 
 }
