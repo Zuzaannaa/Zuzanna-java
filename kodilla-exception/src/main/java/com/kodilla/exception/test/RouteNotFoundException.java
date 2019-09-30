@@ -20,7 +20,7 @@ public class RouteNotFoundException extends Exception {
         try{
            flightFinder.findTheFlight(flight3);
         }catch(RouteNotFoundException e){
-            System.out.println(e);
+            System.out.println();
         }
 
     }
