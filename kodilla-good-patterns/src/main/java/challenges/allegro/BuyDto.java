@@ -9,11 +9,4 @@ public class BuyDto {
         this.sold = sold;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public boolean isSold() {
-        return sold;
-    }
 }
