@@ -3,10 +3,10 @@ package challenges.flights;
 import java.util.Objects;
 
 public class Airport {
-    private String departureAirport;
-    private String arrivalAirport;
+    private final String departureAirport;
+    private final String arrivalAirport;
 
-    public Airport(String departureAirport, String arrivalAirport) {
+    public Airport(final String departureAirport, final String arrivalAirport) {
         this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
     }
