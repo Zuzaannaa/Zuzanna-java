@@ -2,22 +2,22 @@ package challenges.flights;
 
 public class FlightsRetriever {
     public Flights retrieve(){
-        Airport airport1 = new Airport("Seattle", "Portland");
-        Airport airport2 = new Airport("Spokane", "Seattle");
-        Airport airport3 = new Airport("Portland", "Seattle");
-        Airport airport4 = new Airport("Yakima", "Portland");
-        Airport airport5 = new Airport("San Diego", "Portland");
-        Airport airport6 = new Airport("Portland", "San Diego");
-        Airport airport7 = new Airport("Yakima", "Spokane");
+        Flight flight1 = new Flight("Seattle", "Portland");
+        Flight flight2 = new Flight("Spokane", "Seattle");
+        Flight flight3 = new Flight("Portland", "Seattle");
+        Flight flight4 = new Flight("Yakima", "Portland");
+        Flight flight5 = new Flight("San Diego", "Portland");
+        Flight flight6 = new Flight("Portland", "Spokane");
+        Flight flight7 = new Flight("Yakima", "Spokane");
 
         Flights flights = new Flights();
-        flights.addConnection(airport1);
-        flights.addConnection(airport2);
-        flights.addConnection(airport3);
-        flights.addConnection(airport4);
-        flights.addConnection(airport5);
-        flights.addConnection(airport6);
-        flights.addConnection(airport7);
+        flights.addConnection(flight1);
+        flights.addConnection(flight2);
+        flights.addConnection(flight3);
+        flights.addConnection(flight4);
+        flights.addConnection(flight5);
+        flights.addConnection(flight6);
+        flights.addConnection(flight7);
 
         return flights;
     }

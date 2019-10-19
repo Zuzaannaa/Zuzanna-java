@@ -2,11 +2,11 @@ package challenges.flights;
 
 import java.util.Objects;
 
-public class Airport {
+public class Flight {
     private final String departureAirport;
     private final String arrivalAirport;
 
-    public Airport(final String departureAirport, final String arrivalAirport) {
+    public Flight(final String departureAirport, final String arrivalAirport) {
         this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
     }
@@ -23,9 +23,9 @@ public class Airport {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Airport airport = (Airport) o;
-        return departureAirport.equals(airport.departureAirport) &&
-                arrivalAirport.equals(airport.arrivalAirport);
+        Flight flight = (Flight) o;
+        return departureAirport.equals(flight.departureAirport) &&
+                arrivalAirport.equals(flight.arrivalAirport);
     }
 
     @Override

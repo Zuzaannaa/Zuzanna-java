@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Flights {
-    private Set<Airport> connections = new HashSet<Airport>();
+    private Set<Flight> connections = new HashSet<Flight>();
 
-    public void addConnection(Airport airport){
-        connections.add(airport);
+    public void addConnection(Flight flight){
+        connections.add(flight);
     }
 
-    public Set<Airport> getConnections() {
+    public Set<Flight> getConnections() {
         return connections;
     }
 }
