@@ -5,19 +5,17 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class LoggerTestSuite {
-    private static Logger logger;
 
     @BeforeClass
     public static void login(){
-        logger = new Logger();
-        logger.log("You are logged in");
+         Logger.getInstance().log("You are logged in");
     }
 
     @Test
     public void testLog(){
         //Given
         //When
-        String lastLog = logger.getLastLog();
+        String lastLog = Logger.getInstance().getLastLog();
         //Then
         Assert.assertEquals("You are logged in", lastLog);
 
