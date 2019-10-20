@@ -13,8 +13,8 @@ import java.util.Arrays;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class LibraryTestSuite {
-   @Test
-    public void testLoadFromDb(){
+    @Test
+    public void testLoadFromDb() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Library library = context.getBean(Library.class);
@@ -25,7 +25,7 @@ public class LibraryTestSuite {
     }
 
     @Test
-    public void testSaveToDb(){
+    public void testSaveToDb() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Library library = context.getBean(Library.class);
@@ -36,8 +36,8 @@ public class LibraryTestSuite {
     }
 
     @Test
-    public void testContext(){
-       //Given
+    public void testContext() {
+        //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         //When & Then
         System.out.println("===== Beans list: ==== >>");

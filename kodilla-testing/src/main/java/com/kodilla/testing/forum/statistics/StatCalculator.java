@@ -1,6 +1,6 @@
 package com.kodilla.testing.forum.statistics;
 
-public class StatCalculator{
+public class StatCalculator {
 
     private int numberOfPosts;
     private int numberOfComments;
@@ -20,33 +20,35 @@ public class StatCalculator{
         numberOfPosts = statistics.postsCount();
         numberOfComments = statistics.commentsCount();
     }
-    public double calculatePostPerUser(){
-        if ((numberOfPosts == 0 || numberOfUsers == 0)){
+
+    public double calculatePostPerUser() {
+        if ((numberOfPosts == 0 || numberOfUsers == 0)) {
             return 0;
-        }else{
+        } else {
             return numberOfPosts / numberOfUsers;
         }
     }
-    public double calculateCommentPerUser(){
-        if ((numberOfComments == 0 || numberOfUsers == 0)){
+
+    public double calculateCommentPerUser() {
+        if ((numberOfComments == 0 || numberOfUsers == 0)) {
             return 0;
-        }else{
-            return numberOfComments/numberOfUsers;
-        }
-    }
-    public double calculateCommentPerPosr(){
-        if ((numberOfComments == 0 || numberOfPosts == 0)){
-            return 0;
-        }else{
-            return numberOfComments/numberOfPosts;
+        } else {
+            return numberOfComments / numberOfUsers;
         }
     }
 
+    public double calculateCommentPerPosr() {
+        if ((numberOfComments == 0 || numberOfPosts == 0)) {
+            return 0;
+        } else {
+            return numberOfComments / numberOfPosts;
+        }
+    }
 
 
-   public int getNumberOfUsers() {
+    public int getNumberOfUsers() {
         return numberOfUsers;
-   }
+    }
 
     public int getNumberOfPosts() {
         return numberOfPosts;

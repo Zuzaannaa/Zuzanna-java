@@ -6,7 +6,7 @@ import java.io.IOException;
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {
-        if(b == 0){
+        if (b == 0) {
             throw new ArithmeticException();
         }
         return a / b;
@@ -15,14 +15,14 @@ public class FirstChallenge {
 
     public static void main(String[] args) {
 
-        try{
+        try {
             FirstChallenge firstChallenge = new FirstChallenge();
             double result = firstChallenge.divide(3, 0);
             System.out.println(result);
-        }catch(ArithmeticException e) {
+        } catch (ArithmeticException e) {
 
             System.out.println("Division by 0 " + e);
-        }finally{
+        } finally {
             System.out.println("The end");
         }
 

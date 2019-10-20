@@ -6,7 +6,7 @@ import java.util.Set;
 public class Flights {
     private Set<Flight> connections = new HashSet<Flight>();
 
-    public void addConnection(Flight flight){
+    public void addConnection(Flight flight) {
         connections.add(flight);
     }
 

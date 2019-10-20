@@ -17,7 +17,7 @@ public class OrderProcessor {
     public BuyDto process(final PlaceOrder placeOrder) {
         boolean sold = productOrderService.sold(placeOrder);
 
-        if(sold) {
+        if (sold) {
             informationService.inform(placeOrder);
             orderRepository.createOrder(placeOrder);
             return new BuyDto(placeOrder.getUser(), true);

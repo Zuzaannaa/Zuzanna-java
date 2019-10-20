@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 
 public class OrderRetriever {
-    public ProducersMap retrieve(){
+    public ProducersMap retrieve() {
         ProductProcess productProcessExtraFoodShop = new ExtraFoodShop("Washington", "Snohomish", 5398);
         ProductProcess productProcessHealthyShop = new HealthyShop("Utah", "Logan", 3241);
         ProductProcess productProcessGlutenFreeShop = new GlutenFreeShop("Georgia", "Ellijay", 6457);

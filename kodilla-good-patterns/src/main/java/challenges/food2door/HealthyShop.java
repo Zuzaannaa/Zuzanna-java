@@ -33,9 +33,9 @@ public class HealthyShop implements ProductProcess {
 
     @Override
     public void process(Product product) {
-        if(product != null) {
+        if (product != null) {
             System.out.println("Processing order");
-        }else{
+        } else {
             System.out.println("Transaction cancelled.");
         }
     }

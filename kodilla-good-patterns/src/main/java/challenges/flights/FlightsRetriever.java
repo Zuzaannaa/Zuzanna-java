@@ -1,7 +1,7 @@
 package challenges.flights;
 
 public class FlightsRetriever {
-    public Flights retrieve(){
+    public Flights retrieve() {
         Flight flight1 = new Flight("Seattle", "Portland");
         Flight flight2 = new Flight("Spokane", "Seattle");
         Flight flight3 = new Flight("Portland", "Seattle");

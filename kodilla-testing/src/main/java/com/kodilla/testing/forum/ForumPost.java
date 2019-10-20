@@ -6,15 +6,16 @@ public class ForumPost {
     String postBody;
     String author;
 
-    public ForumPost(String postBody, String author){
+    public ForumPost(String postBody, String author) {
         this.postBody = postBody;
         this.author = author;
     }
 
-    public String getPostBody(){
+    public String getPostBody() {
         return postBody;
     }
-    public String getAuthor(){
+
+    public String getAuthor() {
         return author;
     }
 

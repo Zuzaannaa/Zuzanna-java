@@ -3,7 +3,7 @@ package com.kodilla.exception.test;
 import java.util.HashMap;
 
 public class RouteNotFoundException extends Exception {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Flight flight1 = new Flight("Seattle", "London");
         Flight flight2 = new Flight("Los Angeles", "San Diego");
         Flight flight3 = new Flight("Everett", "Portland");
@@ -17,9 +17,9 @@ public class RouteNotFoundException extends Exception {
 
         FlightFinder flightFinder = new FlightFinder(airports);
 
-        try{
-           flightFinder.findTheFlight(flight3);
-        }catch(RouteNotFoundException e){
+        try {
+            flightFinder.findTheFlight(flight3);
+        } catch (RouteNotFoundException e) {
             System.out.println();
         }
 

@@ -8,7 +8,7 @@ public class Drawer {
         this.shape = shape;
     }
 
-    public String doDrawing(){
+    public String doDrawing() {
         return shape.draw();
     }
 }

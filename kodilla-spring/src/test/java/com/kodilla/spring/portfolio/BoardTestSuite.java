@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @SpringBootTest
 public class BoardTestSuite {
     @Test
-    public void testBoard(){
+    public void testBoard() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         //When
@@ -31,7 +31,7 @@ public class BoardTestSuite {
     }
 
     @Test
-    public void testAddToList(){
+    public void testAddToList() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Board board = context.getBean(Board.class);
@@ -40,7 +40,7 @@ public class BoardTestSuite {
         board.getInProgressList().getTasks().add("Task in Progress");
         board.getDoneList().getTasks().add("Done");
         //Then
-        Assert.assertEquals("New Task" , board.getToDoList().getTasks().get(0));
+        Assert.assertEquals("New Task", board.getToDoList().getTasks().get(0));
         Assert.assertEquals("Task in Progress", board.getInProgressList().getTasks().get(0));
         Assert.assertEquals("Done", board.getDoneList().getTasks().get(0));
 

@@ -30,7 +30,7 @@ public class MovieStore {
         return booksTitlesWithTranslations;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         MovieStore movieStore = new MovieStore();
         String title = movieStore.getMovies().entrySet().stream()
                 .flatMap(m -> m.getValue().stream())

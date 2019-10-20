@@ -4,14 +4,16 @@ public class Square implements Shape {
     public String square = "square";
     public double a = 2;
 
-    public Square(String square, double a){
+    public Square(String square, double a) {
         this.square = square;
         this.a = a;
     }
-    public String getSquare(){
+
+    public String getSquare() {
         return square;
     }
-    public double getA(){
+
+    public double getA() {
         return a;
     }
 

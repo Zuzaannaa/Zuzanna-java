@@ -1,10 +1,11 @@
 package com.kodilla.spring.intro.shape;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 public class DrawerTestSuite {
     @Test
-    public void drawingWithCircle(){
+    public void drawingWithCircle() {
         //Given
         Circle circle = new Circle();
         //When
@@ -15,7 +16,7 @@ public class DrawerTestSuite {
     }
 
     @Test
-    public void drawingWithTriangle(){
+    public void drawingWithTriangle() {
         //Given
         Triangle triangle = new Triangle();
         //When

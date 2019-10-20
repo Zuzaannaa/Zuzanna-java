@@ -11,19 +11,19 @@ public class Search {
         this.connections = connections;
     }
 
-    public Set<Flight> searchByArrival(String arrivalAirport){
+    public Set<Flight> searchByArrival(String arrivalAirport) {
         return connections.stream()
                 .filter(f -> f.getArrivalAirport().equals(arrivalAirport))
                 .collect(Collectors.toSet());
     }
 
-    public Set<Flight> searchByDeparture(String departureAirport){
+    public Set<Flight> searchByDeparture(String departureAirport) {
         return connections.stream()
                 .filter(f -> f.getDepartureAirport().equals(departureAirport))
                 .collect(Collectors.toSet());
     }
 
-    public Set<Flight> searchWithTransfer(String dep, String transferAirport, String arr){
+    public Set<Flight> searchWithTransfer(String dep, String transferAirport, String arr) {
         Set<Flight> transferFlights = connections.stream()
                 .filter(f -> f.getDepartureAirport().equals(dep) && f.getArrivalAirport().equals(transferAirport))
                 .collect(Collectors.toSet());

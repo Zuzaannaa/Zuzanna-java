@@ -7,7 +7,7 @@ public final class Reader {
         this.theBook = theBook;
     }
 
-    public void read(){
+    public void read() {
         System.out.println("Reading the book: " + theBook.getTitle());
     }
 }

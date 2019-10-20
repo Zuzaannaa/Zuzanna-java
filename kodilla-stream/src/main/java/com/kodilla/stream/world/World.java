@@ -9,7 +9,7 @@ public final class World {
     private final List<Continent> continents = new ArrayList<>();
 
 
-    public void addContinent(Continent continent){
+    public void addContinent(Continent continent) {
         continents.add(continent);
     }
 
@@ -17,7 +17,7 @@ public final class World {
         BigDecimal people = continents.stream()
                 .flatMap(continent -> continent.getCountries().stream())
                 .map(Country::getPeopleQuantity)
-                .reduce(BigDecimal.ZERO,(sum,country)->sum.add(country));
+                .reduce(BigDecimal.ZERO, (sum, country) -> sum.add(country));
         return people;
 
     }

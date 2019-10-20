@@ -15,7 +15,7 @@ public class BookDirectoryTestSuite {
 
     private List<Book> generateListOfNBooks(int booksQuantity) {
         List<Book> resultList = new ArrayList<Book>();
-        for(int n = 1; n <= booksQuantity; n++){
+        for (int n = 1; n <= booksQuantity; n++) {
             Book theBook = new Book("Title " + n, "Author " + n, 1970 + n);
             resultList.add(theBook);
         }
@@ -91,14 +91,14 @@ public class BookDirectoryTestSuite {
     }
 
     @Test
-    public void testListBooksInHandsOf(){
+    public void testListBooksInHandsOf() {
         //Given
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> noBooks = generateListOfNBooks(0);
         List<Book> oneBook = generateListOfNBooks(1);
         List<Book> fiveBooks = generateListOfNBooks(5);
-        when(libraryDatabaseMock.listBooksInHandsOf(new LibraryUser("Adam", "Smith", "5464" ))).thenReturn(noBooks);
+        when(libraryDatabaseMock.listBooksInHandsOf(new LibraryUser("Adam", "Smith", "5464"))).thenReturn(noBooks);
         when(libraryDatabaseMock.listBooksInHandsOf(new LibraryUser("Joe", "Know", "5432"))).thenReturn(oneBook);
         when(libraryDatabaseMock.listBooksInHandsOf(new LibraryUser("Bob", "Adams", "3333"))).thenReturn(fiveBooks);
         //When

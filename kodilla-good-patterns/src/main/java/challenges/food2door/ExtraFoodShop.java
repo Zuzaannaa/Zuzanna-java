@@ -14,9 +14,9 @@ public class ExtraFoodShop implements ProductProcess {
 
     @Override
     public void process(Product product) {
-        if(product != null) {
+        if (product != null) {
             System.out.println("Processing order");
-        }else{
+        } else {
             System.out.println("Transaction cancelled.");
         }
 
@@ -30,7 +30,7 @@ public class ExtraFoodShop implements ProductProcess {
         return town;
     }
 
-    public int getStoreID(){
+    public int getStoreID() {
         return storeID;
     }
 }

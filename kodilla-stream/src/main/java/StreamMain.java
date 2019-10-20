@@ -12,11 +12,11 @@ import java.util.stream.Collectors;
 
 
 public class StreamMain {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         PoemBeautifier poemBeautifier = new PoemBeautifier();
-        poemBeautifier.beautify("Hi Mate",(text) -> text.toUpperCase());
-        poemBeautifier.beautify("I'm tired",(text) -> text.replace('t', 'f'));
-        poemBeautifier.beautify("...and hungry", (text) -> text.substring(1,13));
+        poemBeautifier.beautify("Hi Mate", (text) -> text.toUpperCase());
+        poemBeautifier.beautify("I'm tired", (text) -> text.replace('t', 'f'));
+        poemBeautifier.beautify("...and hungry", (text) -> text.substring(1, 13));
         poemBeautifier.beautify("Goodnight.", (text -> text.concat(" Zzz")));
 
         Forum forum = new Forum();

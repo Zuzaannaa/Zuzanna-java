@@ -21,7 +21,7 @@ public final class ForumUser {
         this.postsCount = postsCount;
     }
 
-    public final int calculateAge(){
+    public final int calculateAge() {
         int age = Period.between(dateOfBirth, now).getYears();
         return age;
 
@@ -40,10 +40,10 @@ public final class ForumUser {
     }
 
     public LocalDate getDateOfBirth() {
-        return  dateOfBirth;
+        return dateOfBirth;
     }
 
-    public LocalDate getNow(){
+    public LocalDate getNow() {
         return now;
     }
 
