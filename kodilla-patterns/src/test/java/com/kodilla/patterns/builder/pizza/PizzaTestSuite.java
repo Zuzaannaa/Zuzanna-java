@@ -7,11 +7,18 @@ public class PizzaTestSuite {
     @Test
     public void testPizzaNew(){
         //Given
-        Pizza pizza = new Pizza("Thin", "Spicy", "Mushroom", "Onion", "Ham");
+        Pizza pizza = new Pizza.PizzaBuilder()
+                .bottom("Thin")
+                .sauce("Spicy")
+                .ingredients("Ham")
+                .ingredients("Mushrooms")
+                .ingredients("Onion")
+                .ingredients("Pineapple")
+                .build();
         System.out.println(pizza);
         //When
         int howManyIngredients = pizza.getIngredients().size();
         //Then
-        Assert.assertEquals(3, howManyIngredients);
+        Assert.assertEquals(4, howManyIngredients);
     }
 }
