@@ -12,7 +12,7 @@ public final class TaskFactory {
             case PAINTINGTASK:
                 return new PaintingTask("Painting Class", "Red", "Flowers", true);
             case SHOPPINGTASK:
-                return new ShoppingTask("Halloween Shopping", "Pumpkin", 5, true);
+                return new ShoppingTask("Halloween Shopping", "Pumpkin", 5);
             default:
                 return null;
         }
