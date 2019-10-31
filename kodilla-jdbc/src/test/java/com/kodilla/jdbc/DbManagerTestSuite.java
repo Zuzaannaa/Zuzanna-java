@@ -60,6 +60,28 @@ public class DbManagerTestSuite {
         statement.close();
         Assert.assertEquals(2, counter);
 
+    }
+
+    @Test
+    public void testDbManagerSingleton() throws SQLException {
+        //Given
+        DbManagerSingleton singleton = DbManagerSingleton.MANAGER;
+        //When
+        String sqlQuery = "SELECT U.FIRSTNAME, U.LASTNAME, COUNT(*) AS POST_NUMBER FROM USERS U JOIN POSTS P ON U.ID = P.USER_ID GROUP BY U.ID HAVING COUNT(*) > 1;";
+        Statement statement = singleton.getConn().createStatement();
+        ResultSet rs = statement.executeQuery(sqlQuery);
+        //Then
+        int counter = 0;
+        while(rs.next()) {
+            System.out.println(rs.getInt("POST_NUMBER") + ", " +
+                    rs.getString("FIRSTNAME") + ", " +
+                    rs.getString("LASTNAME"));
+            counter++;
+        }
+        rs.close();
+        statement.close();
+        Assert.assertEquals(2, counter);
 
     }
+
 }
