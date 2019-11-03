@@ -28,7 +28,7 @@ public class TaskListDaoTestSuite {
         List<TaskList> nameOfTheList = taskListDao.findByListName(name);
 
         //Then
-        Assert.assertEquals("In Progress List", nameOfTheList.get(0).getListName());
+        Assert.assertEquals(NAME, nameOfTheList.get(0).getListName());
 
         //CleanUp
         int id = nameOfTheList.get(0).getId();
