@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class UserTestSuite {
     @Test
-    public void testDefaultSharingStrategies(){
+    public void testDefaultSharingStrategies() {
         //Given
         User frosting = new Millenials("Frosting B");
         User willow = new YGeneration("Willow L");
@@ -28,7 +28,7 @@ public class UserTestSuite {
     }
 
     @Test
-    public void testIndividualSharingStrategy(){
+    public void testIndividualSharingStrategy() {
         //Given
         User zuz = new ZGeneration("Zuzanna Lubben");
 

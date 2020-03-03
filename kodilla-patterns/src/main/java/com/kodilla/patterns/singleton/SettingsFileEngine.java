@@ -7,11 +7,11 @@ public final class SettingsFileEngine {
     private SettingsFileEngine() {
     }
 
-    public static SettingsFileEngine getInstance(){
-        if(settingsFileEngineInstance == null){
+    public static SettingsFileEngine getInstance() {
+        if (settingsFileEngineInstance == null) {
             settingsFileEngineInstance = new SettingsFileEngine();
         }
-            return settingsFileEngineInstance;
+        return settingsFileEngineInstance;
     }
 
     public String getFileName() {

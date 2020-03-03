@@ -24,7 +24,7 @@ public class InvoiceDaoTestSuite {
     ProductDao productDao;
 
     @Test
-    public void testInvoiceDaoSave(){
+    public void testInvoiceDaoSave() {
         //Given
         Invoice invoice = new Invoice("21/43/77");
 
@@ -53,11 +53,6 @@ public class InvoiceDaoTestSuite {
 
         //CleanUp
         invoiceDao.delete(invoice);
-
-
-
-
-
 
 
     }

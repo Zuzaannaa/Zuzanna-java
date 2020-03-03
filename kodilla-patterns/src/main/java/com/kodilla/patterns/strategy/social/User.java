@@ -12,11 +12,11 @@ public class User {
         return userName;
     }
 
-    public String sharePost(){
+    public String sharePost() {
         return socialPublisher.share();
     }
 
-    public void setPortal(SocialPublisher socialPublisher){
+    public void setPortal(SocialPublisher socialPublisher) {
         this.socialPublisher = socialPublisher;
     }
 }

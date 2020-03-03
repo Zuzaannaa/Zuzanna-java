@@ -7,12 +7,12 @@ import org.junit.Test;
 public class LoggerTestSuite {
 
     @BeforeClass
-    public static void login(){
-         Logger.getInstance().log("You are logged in");
+    public static void login() {
+        Logger.getInstance().log("You are logged in");
     }
 
     @Test
-    public void testLog(){
+    public void testLog() {
         //Given
         //When
         String lastLog = Logger.getInstance().getLastLog();

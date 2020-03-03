@@ -15,7 +15,7 @@ public class TaskList {
     private String description;
     private List<Task> tasks = new ArrayList<>();
 
-    public TaskList(){
+    public TaskList() {
 
     }
 

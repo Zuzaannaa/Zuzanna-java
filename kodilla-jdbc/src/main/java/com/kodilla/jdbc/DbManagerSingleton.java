@@ -9,7 +9,7 @@ public enum DbManagerSingleton {
     MANAGER;
     private Connection conn;
 
-    DbManagerSingleton(){
+    DbManagerSingleton() {
         Properties connectionProps = new Properties();
         connectionProps.put("user", "kodilla_user");
         connectionProps.put("password", "kodilla_password");
@@ -23,15 +23,15 @@ public enum DbManagerSingleton {
         }
     }
 
-    public static DbManagerSingleton getInstance(){
+    public static DbManagerSingleton getInstance() {
         return MANAGER;
     }
 
-    public Connection getConn(){
+    public Connection getConn() {
         return conn;
     }
 
-    public void setConn(Connection conn){
+    public void setConn(Connection conn) {
         this.conn = conn;
     }
 }

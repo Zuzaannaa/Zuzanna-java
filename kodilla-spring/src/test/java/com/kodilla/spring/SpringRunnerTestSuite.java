@@ -19,10 +19,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SpringRunnerTestSuite {
 
     @Test
-    public void testCircleLoadedIntoContainer(){
+    public void testCircleLoadedIntoContainer() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("circle");
+        Shape shape = (Shape) context.getBean("circle");
         //When
         String name = shape.getShapeName();
         //Then
@@ -31,10 +31,10 @@ public class SpringRunnerTestSuite {
     }
 
     @Test
-    public void testTriangleLoadedIntoContainer(){
+    public void testTriangleLoadedIntoContainer() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("triangle");
+        Shape shape = (Shape) context.getBean("triangle");
         //When
         String name = shape.getShapeName();
         //Then
@@ -42,10 +42,10 @@ public class SpringRunnerTestSuite {
     }
 
     @Test
-    public void testSquareLoadedIntoContainer(){
+    public void testSquareLoadedIntoContainer() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("square");
+        Shape shape = (Shape) context.getBean("square");
         //When
         String name = shape.getShapeName();
         //Then
@@ -53,10 +53,10 @@ public class SpringRunnerTestSuite {
     }
 
     @Test
-    public void testShapeLoadedIntoContainer(){
+    public void testShapeLoadedIntoContainer() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("chosenShape");
+        Shape shape = (Shape) context.getBean("chosenShape");
         //When
         String name = shape.getShapeName();
         //Then

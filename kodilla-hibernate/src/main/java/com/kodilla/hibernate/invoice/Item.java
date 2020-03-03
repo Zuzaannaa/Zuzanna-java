@@ -13,7 +13,7 @@ public class Item {
     private BigDecimal value;
     private Product product;
 
-    public Item(){
+    public Item() {
 
     }
 

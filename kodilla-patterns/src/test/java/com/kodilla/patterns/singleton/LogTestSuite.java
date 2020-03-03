@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class LogTestSuite {
     @Test
-    public void testLog(){
+    public void testLog() {
         //Given
         Log log = Log.LOGIN;
         //When

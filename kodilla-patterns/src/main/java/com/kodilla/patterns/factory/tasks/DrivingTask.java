@@ -26,9 +26,9 @@ public final class DrivingTask implements Task {
 
     @Override
     public boolean isTaskExecuted() {
-        if(done){
+        if (done) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

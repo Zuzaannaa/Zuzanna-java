@@ -8,8 +8,8 @@ import java.util.Date;
 
 @NamedQueries({
         @NamedQuery(
-        name="Task.retrieveLongTasks",
-        query = "FROM Task WHERE duration > 10"
+                name = "Task.retrieveLongTasks",
+                query = "FROM Task WHERE duration > 10"
         ),
         @NamedQuery(
                 name = "Task.retrieveShortTasks",
@@ -19,7 +19,7 @@ import java.util.Date;
                 name = "Task.retrieveTaskWithDurationLongerThan",
                 query = "FROM Task WHERE duration > :DURATION"
         )
-        })
+})
 
 @NamedNativeQuery(
         name = "Task.retrieveTasksWithEnoughTime",
@@ -37,7 +37,7 @@ public class Task {
     private TaskFinancialDetails taskFinancialDetails;
     private TaskList taskList;
 
-    public Task(){
+    public Task() {
 
     }
 
